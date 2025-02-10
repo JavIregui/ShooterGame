@@ -175,12 +175,12 @@ function Draw(ctx)
     ctx.fillText("currentFPS=" + (1/currentDeltaTime).toFixed(2), 10, 70);
     ctx.font = "15px Comic Sans MS regular";
     ctx.textAlign = "end";
-    ctx.fillText("VIDA ENEMIGO: " + game.enemies[0].life, canvas.width - 10, 20);
+    ctx.fillText("ENEMY LIFE: " + game.enemies[0].life, canvas.width - 10, 20);
     if(game.enemies.length > 1){
-        ctx.fillText("VIDA ENEMIGO: " + game.enemies[1].life, canvas.width - 10, 40);
+        ctx.fillText("ENEMY LIFE: " + game.enemies[1].life, canvas.width - 10, 40);
     }
     ctx.font = "18px Comic Sans MS regular";
-    ctx.fillText("VIDAS JUGADOR: " + player.vidas, canvas.width - 10, canvas.height-20);
+    ctx.fillText("PLAYER LIFE: " + player.vidas, canvas.width - 10, canvas.height-20);
 
 
 }
